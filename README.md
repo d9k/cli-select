@@ -15,13 +15,13 @@ tac todo.txt | cli-select -m "What do you plan to do today?" > todo-today.txt
 Install [Deno](https://deno.land/) if not yet!
 
 ```
-deno install --force --allow-read --allow-write --unstable --name cli-select https://raw.githubusercontent.com/d9k/cli-select/main/main.ts
+deno install --force --allow-read --allow-write --unstable --name cli-select https://deno.land/x/cli_select/main.ts
 ```
 
 ## Upgrade from url
 
 ```
-deno cache --reload https://raw.githubusercontent.com/d9k/cli-select/main/main.ts
+deno cache --reload https://deno.land/x/cli_select/main.ts
 ```
 
 ## Local install
