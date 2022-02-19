@@ -7,7 +7,7 @@
 ## Usage
 
 ```
-tac todo.txt | cli-select -m "What do you plan to do today?" > todo-today.txt 
+tac todo.txt | cli-select -m -q "What do you plan to do today?" > todo-today.txt 
 ```
 
 ## Install from url
