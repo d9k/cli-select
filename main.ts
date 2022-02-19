@@ -1,6 +1,6 @@
 import * as flags from "https://deno.land/std@0.125.0/flags/mod.ts";
-import question, { questionConfig as questionConfig } from 'https://raw.githubusercontent.com/d9k/question-deno/master/mod.ts'
-import { println }  from './modified/question-deno/util.ts'
+import question, { questionConfig } from 'https://raw.githubusercontent.com/ocpu/question-deno/master/mod.ts'
+import { println }  from 'https://raw.githubusercontent.com/ocpu/question-deno/master/util.ts'
 import {readLines} from "https://deno.land/std/io/bufio.ts"
 
 window.onload = async function main() {
