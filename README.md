@@ -21,7 +21,7 @@ deno install --force --allow-read --allow-write --unstable --name cli-select htt
 ## Upgrade from url
 
 ```
-deno cache --reload https://deno.land/x/cli_select/main.ts
+deno cache --reload --unstable https://deno.land/x/cli_select/main.ts
 ```
 
 ## Local install
