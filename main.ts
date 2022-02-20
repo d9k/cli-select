@@ -34,7 +34,7 @@ PIPED_INPUT: can be \`cat options.txt\``
       if (error) {
         throw Error(error);
       } else {
-        Deno.exit(1);
+        Deno.exit(10);
       }
     }
 
@@ -58,6 +58,10 @@ PIPED_INPUT: can be \`cat options.txt\``
     const result = multiselect
       ? await question('checkbox', questionLine ?? 'Select one or multiple options:', options)
       : await question('list', questionLine ?? 'Select option:', options);
+
+    if (!result) {
+      Deno.exit(1);
+    }
 
     const resultArray = Array.isArray(result) ? result : [result];
 
